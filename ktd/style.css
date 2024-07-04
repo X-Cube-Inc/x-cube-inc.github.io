@@ -1,10 +1,10 @@
 #topNav {
-    width: 100%; /* 네비게이션 바를 전체 너비로 설정 */
+    width: 99%; /* 네비게이션 바를 전체 너비로 설정 */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #1F1A83; /* 네비게이션 바 색상 설정 */
     padding: 10px;
+    background-color: #1F1A83; /* 네비게이션 바 색상 설정 */
     position: relative; /* 드롭다운의 포지셔닝 기준점 설정 */
 }
 
@@ -25,12 +25,23 @@
     }
 }
 
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
     left: 0;
     right: 0;
-    width: 100vw; /* 뷰포트 너비 전체 사용 */
+    width: 99vw; /* 뷰포트 너비 전체 사용 */
     background-color: #444; /* 드롭다운 메뉴의 배경 색상 */
     color: white; /* 드롭다운 메뉴의 텍스트 색상 */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -47,6 +58,12 @@
     display: block;
     /* 애니메이션 적용 */
     animation: slideDown 0.5s ease forwards;
+}
+
+.dropdown-content.non-show {
+    display: flex;
+    /* 애니메이션 적용 */
+    animation: slideUp 0.5s ease backwards;
 }
 
 .dropdown-content a {
@@ -134,7 +151,7 @@
 }
 
 body {
-    background-color: rgb(186, 186, 186);;
+    background-color: rgb(103, 103, 103);;
 }
 
 .page-title {
@@ -152,18 +169,20 @@ body {
     /* 필요에 따라 추가 스타일 설정 */
 }
 
-.page-specificaton {
-    border-top: 3px solid white;
-    text-align: center;
-    color: lightblue;
-    font-size: 38px;
-    margin-top: 120px;
-    padding: 50px;
+.page-update-log-add {
+    color: rgb(0, 200, 0);
+    text-align: 100px;
+    font-size: 26px;
+    padding-left: 120px;
 }
 
-.page-specificaton-details {
-    text-align: left;
-    color: white;
+.page-update-log-details {
+    color: rgb(82, 197, 197);
+    text-align: 100px;
     font-size: 26px;
-    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.page-update-log {
+    padding-top: 40px;
 }
