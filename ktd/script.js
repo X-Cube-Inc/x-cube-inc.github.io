@@ -5,9 +5,11 @@ function toggleDropdown() {
     dropdowns.forEach(function(dropdown) {
         if (dropdown.classList.contains('show')) {
             dropdown.classList.remove('show');
+            dropdown.classList.add('non-show');
             pageTitle.style.marginTop = '20px'; // 드롭다운이 숨겨질 때 원래 마진으로 복귀
         } else {
             dropdown.classList.add('show');
+            dropdown.classList.remove('non-show');
             pageTitle.style.marginTop = '240px'; // 드롭다운이 표시될 때 마진을 늘림
         }
     });
