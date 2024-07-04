@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>한국 철도 데이터베이스 | Korea Train Database</title>
+    </head>
+    <script src="script.js"></script>
+    <body>
+        <nav id="topNav" onclick="toggleDropdown()">
+            <div class="nav-header" onclick="toggleDropdown()">Korea Train Database</div>
+            <div class="nav-link">
+                <a href="#">[추가 예정] 회사 정보</a>
+            </div>
+            <div class="nav-text">노선 정보</div>
+            <div class="nav-text">역 정보</div>
+            <div class="nav-text">OpenBve 애드온</div>
+            <div class="dropdown-content">
+                <div class="dropdown-section">
+                    <span class="dropdown-description">노선 정보</span>
+                    <div class="dropdown-items">
+                        <a href="https://x-cube-inc.github.io/ktd/datas/lines/lines_number_1/">수도권 전철 1호선</a>
+                    </div>
+                </div>
+                <div class="dropdown-section">
+                    <span class="dropdown-description">역 정보</span>
+                    <div class="dropdown-items">
+                        <a href="#">[추가 예정] 1호선</a>
+                    </div>
+                </div>
+                <div class="dropdown-section">
+                    <span class="dropdown-description">OpenBve 애드온</span>
+                    <div class="dropdown-items">
+                        <a href="#">[추가 예정] 1호선</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="page-title">수도권 전철 1호선  | Seoul Metropolitan Subway Line Number 1</div>
+        <div class="details">
+            <section class="1">
+                <div class="page-say">노선 최초 개통 날짜
+                    <span class="tab">|</span>
+                    <span class="tab">
+                        <span class="green">1974년 8월 15일</span>
+                    </span>
+                </div>
+            </section>
+            <div class="padding-top">
+                <section class="2">
+                    <div class="page-say">신호 방식
+                        <span class="tab">|</span>
+                        <span class="tab"><span class="red">ATS</span></span>
+                    </div>
+                </section>
+            </div>
+            <div class="padding-top">
+                <section class="3">
+                    <div class="page-say">사용 선로
+                        <span class="tab">|</span><span class="tab">
+                            <span class="red">경부2선</span>,
+                            <span class="green">경인선</span>,
+                            <span class="green">경원선</span>,
+                            <span class="green">서울 지하철 1호선 [종로선]</span>
+                        </span>
+                    </div>
+                </section>
+            </div>
+            <div class="padding-top">
+                <section class="4">
+                    <div class="page-say">목적
+                        <span class="tab">|</span><span class="tab">
+                            <span class="green">과포화 교통을 분산</span>,
+                            <span class="green">일반 열차 대채</span>
+                        </span>
+                    </div>
+                </section>
+            </div>
+            <div class="padding-top">
+                <section class="5">
+                    <div class="page-say">운영사
+                        <span class="tab">|</span><span class="tab">
+                            <span class="green">한국철도공사 KORAIL</span>,
+                            <span class="red">서울교통공사</span>
+                        </span>
+                    </div>
+                </section>
+            </div>
+            <div class="padding-top">
+                <section class="6">
+                    <div class="page-say">노선도
+                        <span class="tab">|</span><span class="tab">이 밑은 노선도입니다.</span>
+                    </div>
+                    <img src="노선도.svg" 
+                        style="width: 360px; height: 900px; background-color: white;
+                         margin-left: 560px; margin-top: 30px"></img>
+                </section>
+            </div>
+            <div class="padding-top">
+                <section class="7">
+                    <div class="page-say">종점
+                        <span class="tab">|</span><span class="tab">
+                            <span class="green">신창역</span>,
+                            <span class="green">인천역</span>,
+                            <span class="green">연천역</span>
+                        </span>
+                    </div>
+                </section>
+            </div>
+            <div class="padding-top">
+                <section class="8">
+                    <div class="page-say">방향 [종착역]
+                        <span class="tab">|</span><span class="tab">
+                            <span class="green">신창행</span>,
+                            <span class="gold">천안행</span>,
+                            <span class="red">병점행</span>,
+                            <span class="green">서동탄행</span>,
+                            <span class="gold">광명행</span>,
+                            <span class="gold">구로행</span>,
+                            <span class="green">광운대행</span>,
+                            <span class="green">동묘앞행</span>,
+                            <span class="green">청량리<span class="red">급행</span></span>,
+                            <span class="green">서울역급행</span>,
+                            <span class="gold">영등포행</span>,
+                            <span class="red">연천행</span>,
+                            <span class="red">소요산행</span>,
+                            <span class="red">동두천행</span>,
+                            <span class="red">양주행</span>,
+                            <span class="green">의정부행</span>,
+                            <span class="green">용산<span class="red">급행</span></span>,
+                            <span class="green">용산<span class="red">특급</span></span>,
+                            <span class="green">인천행</span>,
+                            <span class="red">동인천<span class="red">급행</span></span>,
+                            <span class="red">동인천<span class="red">특급</span></span>,
+                            <span class="green">부평행</span>,
+                            <span class="green">부천행</span>
+                        </span>
+                    </div>
+                </section>
+            </div>
+            <div class="padding-top">
+                <section class="9">
+                    <div class="page-say">급행
+                        <span class="tab">|</span><span class="tab">
+                            <span class="green">청량리 - 신창<span class="red">급행</span>
+                                <span class="tab">|</span>
+                                <span class="tab">
+                                    청량리 - <span class="red">제기동</span> - 신설동 - 동묘앞 - 동대문 - 
+                                    <span class="red">종로5가</span> - 종로3가 - <span class="red">종각</span> - 시청 -
+                                    서울역 - <span class="red">남영</span> - 용산 - 노량진 - 대방 - 신길 - 
+                                    <span class="gold">영등포</span> - 신도림 - 
+                                    <span class="gold">구로</span> - 가산디지털단지 -
+                                    <span class="gold">금천구청(일부정차) - 안양</span> - 금정 - 
+                                    <span class="gold">의왕(일부정차)</span> - 
+                                    <span class="red">성균관대</span> - 수원 - <span class="red">병점</span> 
+                                    <span class="gold">- 오산 - 서정리 - 평택 - 성환 -</span><span class="red">두정</span> - 
+                                    천안<span class="red"> - 봉명 - 쌍용</span><span class="gold">아산(천안아산)</span>
+                                    <span class="red"> - 탕정 - 배방</span><span class="gold"> - 온양온천</span>
+                                    <span class="red"> - 신창</span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </section>
+            </div>
+            <div class="padding-top">
+                <section class="10">
+                    <div class="page-say">급행
+                        <span class="tab">|</span><span class="tab">
+                            <span class="green">서울 - 신창급행
+                                <span class="tab">|</span>
+                                <span class="tab">
+                                    서울역 - <span class="gold">영등포(서울역급행 정차) - 금천구청 - 안양</span>
+                                    <span class="red">- 군포 - 의왕</span> - 수원 <span class="gold">
+                                        - 병점</span><span class="red"> - 서정리</span>
+                                    <span class="gold"> - 평택 - 성환</span><span class="red"> - 두정</span>
+                                    <span class="gold"> - 천안</span><span class="red"> - 봉명 - 쌍용 - </span>
+                                    <span class="gold">아산(천안아산)</span><span class="red"> - 탕정 - 배방 - </span>
+                                    <span class="gold">온양온천 - </span><span class="red">신창</span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="page-title">서울 지하철 1호선 | Seoul Metro Number Line 1</div>
+        <div class="page-description">경인선, 경원선, 경부선의 경우 각 데이터베이스로 가서 확인해주시기 바랍니다.</div>
+        <div class="details">
+            <section class="10">
+                <div class="page-say">노선 최초 개통 날짜
+                    <span class="tab">|</span>
+                    <span class="tab">
+                        <span class="green">1974년 8월 15일</span>
+                    </span>
+                </div>
+            </section>
+            <section class="11">
+                <div class="page-say">신호 방식
+                    <span class="tab">|</span>
+                    <span class="tab">
+                        <span class="green">ATS [ATS-S2]</span>
+                    </span>
+                </div>
+                <section class="12">
+                    <div class="page-say">선로 수
+                        <span class="tab">|</span>
+                        <span class="tab">
+                            <span class="gold">2 [복선]</span>
+                        </span>
+                    </div>
+                </section>
+                <section class="13">
+                    <div class="page-say">환승역
+                        <span class="tab">|</span>
+                        <span class="tab">
+                            <span class="color-4호선">서</span>
+                            <span class="color-경의중앙선">울</spaa>
+                            <span class="color-공항철도">역</span>
+                            ,
+                            <span class="color-2호선">시청</span>
+                            ,
+                            <span class="color-3호선">종로</span>
+                            <span class="color-5호선">3가</span>
+                            ,
+                            <span class="color-4호선">동대문</span>
+                            ,
+                            <span class="color-6호선">동묘앞</span>
+                            ,
+                            <span class="color-2호선">신설</span>
+                            <span class="color-우이신설선">동역</span>
+                            ,
+                            <span class="color-경의중앙선">청</span>
+                            <span class="color-수인분당선">량</span>
+                            <span class="color-경춘선">리</span>
+                        </span>
+                    </div>
+                </section>
+            </section>
+            <section class="14">
+                <div class="page-say">표정속도
+                    <span class="tab">|</span>
+                    <span class="tab">
+                        <span class="red">24.6km/h</span>
+                    </span>
+                </div>
+            </section>
+            <section class="15">
+                <div class="page-say">통행방향
+                    <span class="tab">|</span>
+                    <span class="tab">
+                        <span class="green">좌측통행</span>
+                    </span>
+                </div>
+            </section>
+            <section class="16">
+                <div class="page-say">급전방식
+                    <span class="tab">|</span>
+                    <span class="tab">
+                        <span class="green">직류 1500V</span>
+                    </span>
+                </div>
+            </section>
+            <section class="17">
+                <div class="page-say">소요시간
+                    <span class="tab">|</span>
+                    <span class="tab">
+                        <span class="green">20분</span>
+                    </span>
+                </div>
+            </section>
+            <section class="18">
+                <div class="page-say">노선도
+                    <span class="tab">|</span>
+                    <span class="tab">
+                        <span class="color-green">아래에 있는 이미지가 노선도입니다.</span>
+                    </span>
+                </div>
+                <img src="서울지하철1호선노선도.svg" 
+                        style="width: 480px; height: 800px; background-color: white;
+                         margin-left: 525px; margin-top: 30px"></img>
+            </section>
+        </div>
+        <div class="page-description">
+            Website UI Copyright by X-Cube Train Team  |  웹사이트 UI 저작권은 X-Cube 철도 팀에게 있습니다.
+        </div>
+    </body>
+</html>
