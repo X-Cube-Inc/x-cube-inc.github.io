@@ -1,0 +1,285 @@
+#topNav {
+    width: 99%; /* 네비게이션 바를 전체 너비로 설정 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #1F1A83; /* 네비게이션 바 색상 설정 */
+    position: relative; /* 드롭다운의 포지셔닝 기준점 설정 */
+}
+
+.nav-link {
+    display: inline-block;
+    /* 너비 설정 제거 */
+}
+
+/* 드롭다운 애니메이션 정의 */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 99vw; /* 뷰포트 너비 전체 사용 */
+    background-color: #444; /* 드롭다운 메뉴의 배경 색상 */
+    color: white; /* 드롭다운 메뉴의 텍스트 색상 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* 네비게이션 바 바로 아래 위치 */
+    /* 애니메이션 초기 상태 설정 */
+    opacity: 0;
+    transform: translateY(-20px);
+    height: 200px; /* 원하는 높이로 설정 */
+    overflow: auto; /* 내용이 넘칠 경우 스크롤바 표시 */
+}
+
+.dropdown-content.show {
+    display: block;
+    /* 애니메이션 적용 */
+    animation: slideDown 0.5s ease forwards;
+}
+
+.dropdown-content.non-show {
+    display: flex;
+    /* 애니메이션 적용 */
+    animation: slideUp 0.5s ease backwards;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 5px 20px; /* 상하 패딩을 늘립니다 */
+    text-decoration: none;
+    display: block;
+}
+
+.nav-link a, .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-content a:not(:last-child) {
+    margin-bottom: 5px; /* 항목 사이의 마진을 줄입니다 */
+}
+
+.nav-link a:hover, .dropdown-content a:hover {
+    color: #ddd;
+}
+
+.nav-header {
+    color: gold;
+}
+
+.dropdown-section {
+    display: flex; /* Flexbox를 사용하여 항목을 수평으로 배치 */
+    align-items: flex-start; /* 세로 시작 지점 정렬 */
+    margin-bottom: 10px; /* 섹션 간 여백 설정 */
+}
+
+.dropdown-description {
+    background-color: grey; /* 배경 색상 설정 */
+    color: lightgreen; /* 글자 색상 설정 */
+    padding: 5px; /* 패딩 설정 */
+    margin-right: 10px; /* 오른쪽 여백 설정 */
+    flex-shrink: 0; /* Flex 항목 축소 방지 */
+}
+
+.dropdown-items {
+    display: flex; /* Flexbox를 사용하여 항목을 수직으로 배치 */
+    flex-direction: column; /* 항목을 수직 방향으로 배치 */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: gray; /* 전체 배경을 회색으로 설정 */
+    /* 나머지 스타일 유지 */
+}
+
+.dropdown-content.show {
+    display: flex; /* 드롭다운을 표시하고 수평으로 배치 */
+}
+
+.dropdown-section {
+    display: flex; /* 각 섹션을 수평으로 배치 */
+    flex-direction: column; /* 섹션 내 항목을 수직으로 배치 */
+    padding: 10px; /* 섹션별 패딩 */
+    border-right: 1px solid white; /* 오른쪽 경계선 설정 */
+    align-items: flex-start; /* 항목 정렬 */
+}
+
+.dropdown-section:last-child {
+    border-right: none; /* 마지막 섹션의 경계선 제거 */
+}
+
+.nav-link a, .nav-link a:link, .nav-link a:visited, .nav-link a:hover, .nav-link a:active {
+    color: white; /* 모든 상태에 대해 흰색 적용 */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.dropdown-content a, .dropdown-content a:link, .dropdown-content a:visited, .dropdown-content a:hover, .dropdown-content a:active {
+    color: white; /* 드롭다운 내 링크도 동일하게 적용 */
+}
+
+.nav-text {
+    color: white; /* 흰색으로 설정 */
+    /* 필요한 경우 추가 스타일 */
+}
+
+body {
+    background-color: rgb(103, 103, 103);;
+}
+
+.page-title {
+    text-align: center; /* 텍스트 중앙 정렬 */
+    color: white; /* 텍스트 색상 흰색으로 설정 */
+    font-size: 42px; /* 폰트 크기 설정 */
+    margin-top: 20px;
+}
+
+.page-description {
+    text-align: center; /* 텍스트 중앙 정렬 */
+    color: black; /* 색상 설정, 원하는 색상으로 변경 가능 */
+    font-size: 18px; /* 폰트 크기 설정 */
+    margin-top: 10px; /* 상단 여백 설정 */
+    /* 필요에 따라 추가 스타일 설정 */
+}
+
+.page-say {
+    text-align: center; /* 텍스트 중앙 정렬 */
+    color: wheat; /* 색상 설정, 원하는 색상으로 변경 가능 */
+    font-size: 18px; /* 폰트 크기 설정 */
+    margin-top: 10px; /* 상단 여백 설정 */
+    /* 필요에 따라 추가 스타일 설정 */
+}
+
+.page-update-log-add {
+    color: rgb(0, 200, 0);
+    text-align: 100px;
+    font-size: 26px;
+    padding-left: 120px;
+}
+
+
+.page-update-log-details {
+    color: rgb(82, 197, 197);
+    text-align: 100px;
+    font-size: 26px;
+    padding-left: 30px;
+}
+
+.page-update-log {
+    padding-top: 40px;
+}
+
+.tab {
+    padding-left: 80px;
+}
+
+.green {
+    color: lightgreen;
+}
+
+.wheet {
+    color: wheat;
+}
+
+.padding-top {
+    padding-top: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.gold {
+    color: gold;
+}
+
+.color-경의중앙선 {
+    color: #77C4A3;
+}
+
+.color-4호선 {
+    color: #00A4E3;
+}
+
+.color-공항철도 {
+    color: #0090D2;
+}
+
+.color-2호선 {
+    color: #00A84D;
+}
+
+.color-3호선 {
+    color: #EF7C1C;
+}
+
+.color-5호선 {
+    color: #996CAC;
+}
+
+.color-6호선 {
+    color :#CD7C2F
+}
+
+.color-우이신설선 {
+    color: #B7C450;
+}
+
+.color-수인분당선 {
+    color: #FABE00;
+}
+
+.color-경춘선 {
+    color: #178C72;
+}
+
+.specification-name {
+    text-align: left;
+    width: 350px;
+    display: inline-block;
+    color: goldenrod;
+    font-size: 26px;
+    padding-right: 17px;
+    border-right: 3px solid white;
+}
+
+.specification-good {
+    text-align: left;
+    color: lightgreen;
+    font-size: 26px;
+    margin-left: 17px;
+}
+
+.specification-bad {
+    text-align: left;
+    color: red;
+    font-size: 26px;
+    margin-left: 17px;
+}
